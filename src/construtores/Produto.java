@@ -2,11 +2,15 @@ package construtores;
 
 public class Produto {
 
+	static final int QUANTIDADE_ESTOQUE_INICIAL = 100;
+
+	String nome;
 	int quantidadeEstoque;
 
-	Produto() {
-		this.quantidadeEstoque = 10;
-		System.out.println("Construindo um produto");
+	Produto(String nome) {
+		this.nome = nome;
+		this.quantidadeEstoque = QUANTIDADE_ESTOQUE_INICIAL;
 	}
+	
 
 }
