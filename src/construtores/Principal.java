@@ -4,7 +4,10 @@ public class Principal {
 
 	public static void main(String[] args) {
 		Produto produto1 = new Produto("Picanha 1kg (peça)");
-		Produto produto2 = new Produto("Arroz", 35);
+
+		// Exceção em tempo de execução
+		Produto produto2 = new Produto(null, -35);
+
 		Produto produto3 = new Produto();
 
 		System.out.println(produto1.nome);
